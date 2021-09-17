@@ -12,6 +12,6 @@ router.get('/billing', isAuth, userController.Billing);
 router.get('/save', isAuth, userController.SaveCard);
 router.get('/makedefault', isAuth, userController.MakeDefault);
 router.get('/subscribe', isAuth, userController.Subscribe);
-router.get('', isAuth, userController.Dashboard);
+router.get('/dashboard', userController.Dashboard);
 
 module.exports = router;
